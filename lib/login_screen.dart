@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     try {
       final user = users.firstWhere(
-        (user) => user['username'] == email && user['PASSWORD'] == password,
+        (user) => user['name'] == email && user['password'] == password,
         orElse: () => {},
       );
 
